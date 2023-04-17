@@ -1,10 +1,10 @@
 # AlgorithmProject
 
-Written by:
-Amir Feiz
+  Written by:
+  Amir Feiz
 
-https://github.com/amir-feiz/
+  https://github.com/amir-feiz/
 
-Mohammadkazem Harandi
-4003623039
-https://github.com/mohammadkahr
+  Mohammadkazem Harandi
+  4003623039
+  https://github.com/mohammadkahr
