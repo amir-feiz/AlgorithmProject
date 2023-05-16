@@ -5,6 +5,7 @@ import com.company.models.Carpet;
 import com.company.models.GFGGraph;
 
 import static com.company.models.Knapsack.knapSack;
+import static com.company.models.Knapsack.knapsackForCount;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class Main {
             System.out.println("Coloring of graph 2 ");
             g2.greedyColoring();
         */}
-    //knapsack test
+    //knapsack for most value
         {/*
             Carpet c1 = new Carpet(60,10);
             Carpet c2 = new Carpet(100,20);
@@ -42,7 +43,18 @@ public class Main {
             int n = val.length;
             System.out.println("max value is: " + knapSack(W, wt, val, n));
             */}
-
+    //knapsack test for  most count
+        {/*
+            Carpet c1 = new Carpet(60,10);
+            Carpet c2 = new Carpet(100,20);
+            Carpet c3 = new Carpet(120,30);
+            Carpet c4 = new Carpet(40,20);
+            Carpet c5 = new Carpet(120,30);
+            int val[] = new int[] { c1.getPrice(), c2.getPrice(), c3.getPrice() ,c4.getPrice(),c5.getPrice() };
+            int max = 200;
+            System.out.println("max value is: " + knapsackForCount(val,max));
+        */}
+    //
 
 
     }

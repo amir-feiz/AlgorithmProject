@@ -1,5 +1,7 @@
 package com.company.models;
 
+import java.util.Arrays;
+
 // A Dynamic Programming based solution for 0-1 Knapsack problem
 public class Knapsack {
 
@@ -28,4 +30,22 @@ public class Knapsack {
 
         return K[n][W];
     }
+
+    public static int knapsackForCount(int prices[], int max){
+        int count = 0;
+        int addedAPrices=0;
+        Arrays.sort(prices);
+        for(int x:prices){
+            addedAPrices+=x;
+            if (addedAPrices > max)
+                return count;
+            else
+                count++;
+        }
+        return count;
+
+    }
+
+
+
 }
