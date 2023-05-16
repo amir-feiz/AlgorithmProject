@@ -1,7 +1,7 @@
 package com.company.models;
 
 // A Dynamic Programming based solution for 0-1 Knapsack problem
-class Knapsack {
+public class Knapsack {
 
     // A utility function that returns maximum of two integers
     static int max(int a, int b) {
@@ -10,7 +10,7 @@ class Knapsack {
 
     // Returns the maximum value that can be put in a knapsack
     // of capacity W
-    static int knapSack(int W, int wt[], int val[], int n) {
+    public static int knapSack(int W, int wt[], int val[], int n) {
         int i, w;
         int K[][] = new int[n + 1][W + 1];
 
