@@ -1,4 +1,4 @@
-package com.company.Graph;
+package com.company.models;
 
 import java.util.*;
 
@@ -177,4 +177,5 @@ public class Graph {
             }
         }
     }
+
 }

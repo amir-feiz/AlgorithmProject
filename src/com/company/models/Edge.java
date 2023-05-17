@@ -1,4 +1,4 @@
-package com.company.Graph;
+package com.company.models;
 
 public class Edge {
     private final Vertex[] endpoints;

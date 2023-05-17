@@ -1,4 +1,4 @@
-package com.company.Graph;
+package com.company.models;
 
 import java.util.HashMap;
 import java.util.Map;
