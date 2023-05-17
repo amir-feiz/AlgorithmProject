@@ -53,7 +53,7 @@ public class Main {
             System.out.println("max value is: " + knapsackForCount(val,max));
         */}
     //
-//        print with difrent color
+//        print with different color
 //        PrintColor.printNorm("abc");
 //        PrintColor.printBlu("abc");
 //        PrintColor.printRed("abc");
@@ -61,6 +61,5 @@ public class Main {
 //        PrintColor.printYel("abc");
 //        PrintColor.printPur("abc");
 //        PrintColor.printCya("abc");
-
     }
 }

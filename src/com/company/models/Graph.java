@@ -155,11 +155,6 @@ public class Graph {
                 break;
             }
         }
-        // todo delete this
-//        System.out.println("BFS levels: ");
-//        for (List<Vertex> level : levels) {
-//            System.out.println(level.stream().map(Vertex::getElement).toList());
-//        }
         return levels;
     }
     public void BFS(Vertex s, Set<Vertex> known) {

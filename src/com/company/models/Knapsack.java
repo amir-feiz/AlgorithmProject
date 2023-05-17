@@ -2,20 +2,18 @@ package com.company.models;
 
 import java.util.Arrays;
 
-// A Dynamic Programming based solution for 0-1 Knapsack problem
+//A Dynamic Programming based solution for 0-1 Knapsack problem
 public class Knapsack {
 
-    // A utility function that returns maximum of two integers
-    static int max(int a, int b) {
-        return (a > b) ? a : b;
+    public static int max(int a, int b) {
+        return Math.max(a, b);
     }
 
     // Returns the maximum value that can be put in a knapsack
     // of capacity W
-    public static int knapSack(int W, int wt[], int val[], int n) {
+    public static int knapSack(int W, int[] wt, int[] val, int n) {
         int i, w;
-        int K[][] = new int[n + 1][W + 1];
-
+        int[][] K = new int[n + 1][W + 1];
         // Build table K[][] in bottom up manner
         for (i = 0; i <= n; i++) {
             for (w = 0; w <= W; w++) {
@@ -27,11 +25,10 @@ public class Knapsack {
                     K[i][w] = K[i - 1][w];
             }
         }
-
         return K[n][W];
     }
 
-    public static int knapsackForCount(int prices[], int max){
+    public static int knapsackForCount(int[] prices, int max){
         int count = 0;
         int addedAPrices=0;
         Arrays.sort(prices);
@@ -43,9 +40,5 @@ public class Knapsack {
                 count++;
         }
         return count;
-
     }
-
-
-
 }

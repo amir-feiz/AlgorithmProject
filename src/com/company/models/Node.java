@@ -10,19 +10,16 @@ public class Node {
         adj = new LinkedList<>();
     }
 
-
+    //getters and setters
     public int getValue() {
         return value;
     }
-
     public void setValue(int value) {
         this.value = value;
     }
-
     public LinkedList<Integer> getAdj() {
         return adj;
     }
-
     public void setAdj(LinkedList<Integer> adj) {
         this.adj = adj;
     }
