@@ -3,9 +3,7 @@ import com.company.File.JSonFileWriter;
 import com.company.File.JsonFileReader;
 import com.company.models.Carpet;
 import com.company.models.GFGGraph;
-
-import static com.company.models.Knapsack.knapSack;
-import static com.company.models.Knapsack.knapsackForCount;
+import com.company.models.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,7 +41,7 @@ public class Main {
             int n = val.length;
             System.out.println("max value is: " + knapSack(W, wt, val, n));
             */}
-    //knapsack test for  most count
+    //knapsack test for most count
         {/*
             Carpet c1 = new Carpet(60,10);
             Carpet c2 = new Carpet(100,20);
@@ -55,7 +53,14 @@ public class Main {
             System.out.println("max value is: " + knapsackForCount(val,max));
         */}
     //
-
+//        print with difrent color
+//        PrintColor.printNorm("abc");
+//        PrintColor.printBlu("abc");
+//        PrintColor.printRed("abc");
+//        PrintColor.printGre("abc");
+//        PrintColor.printYel("abc");
+//        PrintColor.printPur("abc");
+//        PrintColor.printCya("abc");
 
     }
 }

@@ -5,8 +5,7 @@ public class Carpet {
     GFGGraph myCarpet;
     int price;
     int weigh;
-
-    int count = 10;
+    int count = 1;
 
     public int getCount() {
         return count;
