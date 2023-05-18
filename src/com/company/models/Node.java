@@ -9,7 +9,10 @@ public class Node {
     public Node(){
         adj = new LinkedList<>();
     }
-
+    public Node(int value){
+        adj = new LinkedList<>();
+        this.value = value;
+    }
 
     public int getValue() {
         return value;
