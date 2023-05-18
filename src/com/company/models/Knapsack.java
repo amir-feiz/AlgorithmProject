@@ -45,7 +45,4 @@ public class Knapsack {
         return count;
 
     }
-
-
-
 }
