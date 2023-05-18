@@ -7,13 +7,37 @@ import com.company.models.Node;
 import com.company.models.SequenceCheck;
 
 import java.util.Random;
+import com.company.models.*;
+import com.company.View.*;
+import com.company.Dijkstra.*;
 
-import static com.company.models.Knapsack.knapSack;
-import static com.company.models.Knapsack.knapsackForCount;
+import javax.swing.text.View;
+import java.util.Scanner;
+
+import static com.company.Dijkstra.DijkstraGraphGenerator.applyDijkstra;
+import static com.company.Dijkstra.DijkstraGraphGenerator.generateRandomGraph;
+import static java.lang.System.exit;
 
 public class Main {
+    public static Scanner input =new Scanner(System.in);
     public static void main(String[] args) {
-        //coloring graph test
+        //MainMenu();
+
+
+        //Dijkstra
+        /*int numVertices = 10; // تعداد رئوس مورد نیاز
+
+        Graph graph = generateRandomGraph(numVertices);
+        Vertex source = graph.getVertices().get(3); // رأس مبدأ
+
+        PrintColor.printNorm("Randomly generated graph:");
+        PrintColor.printNorm("Vertices: " + graph.getVertices().size());
+        PrintColor.printNorm("Edges: " + graph.getEdges().size());
+
+        PrintColor.printPur("\nApplying Dijkstra's algorithm:");
+        applyDijkstra(graph, source);*/
+
+	//coloring graph test
         {/*
             GFGGraph g1 = new GFGGraph(5);
             g1.addEdge(0, 1);
@@ -35,9 +59,8 @@ public class Main {
             g2.addEdge(4, 3);
             System.out.println("Coloring of graph 2 ");
             g2.greedyColoring();
-        */
-        }
-        //knapsack for most value
+        */}
+    //knapsack for most value
         {/*
             Carpet c1 = new Carpet(60,10);
             Carpet c2 = new Carpet(100,20);
@@ -47,9 +70,8 @@ public class Main {
             int W = 50;
             int n = val.length;
             System.out.println("max value is: " + knapSack(W, wt, val, n));
-            */
-        }
-        //knapsack test for  most count
+            */}
+    //knapsack test for  most count
         {/*
             Carpet c1 = new Carpet(60,10);
             Carpet c2 = new Carpet(100,20);
@@ -87,6 +109,26 @@ public class Main {
             mainNode[8] = n9;
             mainNode[9] = n10;
 
+        */}
+    //
+//        print with different color
+//        PrintColor.printNorm("abc");
+//        PrintColor.printBlu("abc");
+//        PrintColor.printRed("abc");
+//        PrintColor.printGre("abc");
+//        PrintColor.printYel("abc");
+//        PrintColor.printPur("abc");
+//        PrintColor.printCya("abc");
+    }
+    public static void MainMenu(){
+        while (true){
+            // Here
+            String select = input.next();
+            switch (select){
+                case "1" :
+
+                    break;
+                case "2" :
 
             Random random = new Random();
             Node n[][] = new Node[10][10];
@@ -94,6 +136,8 @@ public class Main {
                 for (int j = 0; j < 10; j++) {
                     n[i][j] = mainNode[random.nextInt(0, 10)];
                     System.out.print(n[i][j].getValue() + " ");
+                    break;
+                case "3" :
 
                 }
                 System.out.println();
@@ -101,5 +145,23 @@ public class Main {
             int answer[] = SequenceCheck.chooseMostSimilars(mainNode, n);
             System.out.println(answer[0] + "  " + answer[1] + "  " + answer[2]);
         */}
+                    break;
+                case "4" :
+
+                    break;
+                case "5" :
+
+                    break;
+                case "6" :
+
+                    break;
+                case "7" :
+
+                    break;
+                case "exit" :
+                    PrintColor.printRed("Good luck");
+                    exit(0);
+            }
+        }
     }
 }

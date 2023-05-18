@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 public class GFGGraph {
-    private int V;   // No. of vertices
-    private Node[] allNodes;
+    private final int V;   // No. of vertices
+    private final Node[] allNodes;
 
     //Constructor
     public GFGGraph(int v) {
@@ -22,10 +22,10 @@ public class GFGGraph {
         allNodes[w].getAdj().add(v); //Graph is undirected
     }
 
-    // Assigns colors (starting from 0) to all vertices and
+    // Assign colors (starting from 0) to all vertices and
     // prints the assignment of colors
     public void greedyColoring() {
-        int result[] = new int[V];
+        int[] result = new int[V];
 
         // Initialize all vertices as unassigned
         Arrays.fill(result, -1);
@@ -36,7 +36,7 @@ public class GFGGraph {
         // A temporary array to store the available colors. False
         // value of available[cr] would mean that the color cr is
         // assigned to one of its adjacent vertices
-        boolean available[] = new boolean[V];
+        boolean[] available = new boolean[V];
 
         // Initially, all colors are available
         Arrays.fill(available, true);
@@ -45,9 +45,7 @@ public class GFGGraph {
         for (int u = 1; u < V; u++) {
             // Process all adjacent vertices and flag their colors
             // as unavailable
-            Iterator<Integer> it = allNodes[u].getAdj().iterator();
-            while (it.hasNext()) {
-                int i = it.next();
+            for (int i : allNodes[u].getAdj()) {
                 if (result[i] != -1)
                     available[result[i]] = false;
             }
