@@ -4,9 +4,35 @@ import com.company.File.JsonFileReader;
 import com.company.models.Carpet;
 import com.company.models.GFGGraph;
 import com.company.models.*;
+import com.company.View.*;
+import com.company.Dijkstra.*;
+
+import javax.swing.text.View;
+import java.util.Scanner;
+
+import static com.company.Dijkstra.DijkstraGraphGenerator.applyDijkstra;
+import static com.company.Dijkstra.DijkstraGraphGenerator.generateRandomGraph;
+import static java.lang.System.exit;
 
 public class Main {
+    public static Scanner input =new Scanner(System.in);
     public static void main(String[] args) {
+        //MainMenu();
+
+
+        //Dijkstra
+        /*int numVertices = 10; // تعداد رئوس مورد نیاز
+
+        Graph graph = generateRandomGraph(numVertices);
+        Vertex source = graph.getVertices().get(3); // رأس مبدأ
+
+        PrintColor.printNorm("Randomly generated graph:");
+        PrintColor.printNorm("Vertices: " + graph.getVertices().size());
+        PrintColor.printNorm("Edges: " + graph.getEdges().size());
+
+        PrintColor.printPur("\nApplying Dijkstra's algorithm:");
+        applyDijkstra(graph, source);*/
+
 	//coloring graph test
         {/*
             GFGGraph g1 = new GFGGraph(5);
@@ -61,5 +87,37 @@ public class Main {
 //        PrintColor.printYel("abc");
 //        PrintColor.printPur("abc");
 //        PrintColor.printCya("abc");
+    }
+    public static void MainMenu(){
+        while (true){
+            // Here
+            String select = input.next();
+            switch (select){
+                case "1" :
+
+                    break;
+                case "2" :
+
+                    break;
+                case "3" :
+
+                    break;
+                case "4" :
+
+                    break;
+                case "5" :
+
+                    break;
+                case "6" :
+
+                    break;
+                case "7" :
+
+                    break;
+                case "exit" :
+                    PrintColor.printRed("Good luck");
+                    exit(0);
+            }
+        }
     }
 }

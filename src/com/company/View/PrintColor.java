@@ -1,4 +1,4 @@
-package com.company.models;
+package com.company.View;
 
 public class PrintColor {
     public static void printNorm(Object obj){
@@ -46,5 +46,14 @@ public class PrintColor {
                 + obj
                 + ANSI_RESET);
     }
-
+    public static void printNorm2(Object obj){
+        System.out.print(obj);
+    }
+    public static void printBlu2(Object obj){
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_BLU = "\u001B[34m";
+        System.out.print(ANSI_BLU
+                + obj
+                + ANSI_RESET);
+    }
 }
