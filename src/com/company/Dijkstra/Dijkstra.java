@@ -10,7 +10,7 @@ public class Dijkstra {
 
         // ایجاد رئوس
         for (int i = 0; i < numVertices; i++) {
-            Vertex vertex = new Vertex(i+1);
+            Vertex vertex = new Vertex(i);
             graph.addVertex(vertex);
         }
 
@@ -20,9 +20,11 @@ public class Dijkstra {
 
             for (int j = i + 1; j < numVertices; j++) {
                 Vertex destination = graph.getVertices().get(j);
-                int weight = (int) (Math.random() * 10) + 1; // وزن تصادفی
+                int weight = (int) (Math.random() * 100) + 1; // وزن تصادفی
                 Edge edge = new Edge(source, destination, weight);
+                Edge edge1 = new Edge(destination, source, weight);
                 graph.addEdge(edge);
+                graph.addEdge(edge1);
             }
         }
         return graph;
@@ -86,4 +88,65 @@ public class Dijkstra {
             }
         }
     }
+    public static void applyDijkstra2(Graph graph, Vertex source, List<Vertex> destinations) {
+        Map<Vertex, Integer> distance = new HashMap<>();
+        Map<Vertex, Vertex> previous = new HashMap<>();
+        PriorityQueue<Vertex> queue =
+                new PriorityQueue<>(Comparator.comparingInt(distance::get));
+
+        // تنظیم فاصله اولیه برای همه رئوس به بی‌نهایت
+        for (Vertex vertex : graph.getVertices()) {
+            distance.put(vertex, Integer.MAX_VALUE);
+        }
+
+        // تنظیم فاصله اولیه برای رأس مبدأ به صفر
+        distance.put(source, 0);
+
+        // قرار دادن رئوس در صفوف اولیه
+        queue.add(source);
+
+        while (!queue.isEmpty()) {
+            Vertex current = queue.poll();
+
+            // بررسی همسایگان رئوس فعلی
+            for (Edge edge : graph.getEdges()) {
+                if (edge.getSource().equals(current)) {
+                    Vertex neighbor = edge.getDestination();
+                    int newDistance = distance.get(current) + edge.getWeight();
+
+                    // اگر فاصله جدید به همسایه کمتر از فاصله قبلی باشد، به‌روزرسانی کن
+                    if (newDistance < distance.get(neighbor)) {
+                        distance.put(neighbor, newDistance);
+                        previous.put(neighbor, current);
+                        queue.remove(neighbor); // حذف همسایه از صف
+                        queue.add(neighbor); // اضافه کردن همسایه با فاصله به‌روزرسانی شده به صف
+                    }
+                }
+            }
+        }
+
+        // نمایش نزدیک ترین مسیرها به مقاصد
+        for (Vertex destination : destinations) {
+            PrintColor.printBlu2("Best Path from " + source.getId() + " to " + destination.getId() + ": ");
+            if (distance.get(destination) == Integer.MAX_VALUE) {
+                PrintColor.printYel("No path found.");
+            } else {
+                List<Vertex> path = new ArrayList<>();
+                Vertex current = destination;
+                while (current != null) {
+                    path.add(current);
+                    current = previous.get(current);
+                }
+                Collections.reverse(path);
+                PrintColor.printNorm2("Path: ");
+                for (Vertex v : path) {
+                    PrintColor.printNorm2(v.getId() + ",");
+                }
+                PrintColor.printNorm("\b\t\tDistance: " + distance.get(destination));
+            }
+        }
+    }
+
+
+
 }

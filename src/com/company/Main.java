@@ -3,21 +3,15 @@ package com.company;
 import com.company.Dijkstra.Dijkstra;
 import com.company.Dijkstra.Graph;
 import com.company.Dijkstra.Vertex;
-import com.company.File.JSonFileWriter;
-import com.company.File.JsonFileReader;
-import com.company.colorGraph.WriteColorGraph;
-import com.company.models.Carpet;
-import com.company.models.GFGGraph;
-import com.company.models.Node;
-import com.company.models.SequenceCheck;
 
 import com.company.View.*;
-import com.company.Dijkstra.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
-import static com.company.Dijkstra.Dijkstra.applyDijkstra;
+import static com.company.Dijkstra.Dijkstra.*;
 import static java.lang.System.exit;
 
 public class Main {
@@ -29,13 +23,13 @@ public class Main {
         Main.MainMenu();
 //        ArrayList<String[]> arr = RandomIntReader.FileReader();
 //        System.out.println("scsdc");
-        WriteColorGraph w = new WriteColorGraph();
+        /*WriteColorGraph w = new WriteColorGraph();
         w.write();
         w.write();
 
         w.write();
         w.write();        w.write();
-        w.write();
+        w.write();*/
         //Dijkstra
         {/*
             int numVertices = 10; // تعداد رئوس مورد نیاز
@@ -85,8 +79,7 @@ public class Main {
             int W = 50;
             int n = val.length;
             System.out.println("max value is: " + knapSack(W, wt, val, n));
-            */
-        }
+            */}
         //knapsack test for  most count
         {/*
             Carpet c1 = new Carpet(60,10);
@@ -97,8 +90,7 @@ public class Main {
             int val[] = new int[] { c1.getPrice(), c2.getPrice(), c3.getPrice() ,c4.getPrice(),c5.getPrice() };
             int max = 200;
             System.out.println("max value is: " + knapsackForCount(val,max));
-        */
-        }
+        */}
         //sort algorithm test
         {/*
             Node n1 = new Node(1);
@@ -140,8 +132,7 @@ public class Main {
             }
             int answer[] = SequenceCheck.chooseMostSimilars(mainNode, n);
             System.out.println(answer[0] + "  " + answer[1] + "  " + answer[2]);
-        */
-        }
+        */}
     }
 
     //MainMenu();
@@ -194,27 +185,30 @@ public class Main {
     }
     static void CaseOne(int n ){
         if (n == 1){
-            Graph graph = Dijkstra.generateRandomGraph(10);
+            Graph graph = Dijkstra.generateRandomGraph(15);
             Vertex source = graph.getVertices().get(0); // رأس مبدأ
 
             PrintColor.printNorm("Randomly generated graph:");
             PrintColor.printNorm("Vertices: " + graph.getVertices().size());
             PrintColor.printNorm("Edges: " + graph.getEdges().size());
             PrintColor.printPur("Applying Dijkstra's algorithm:\n");
+
+            PrintColor.printPur("We will show you the best routes from the " +
+                                        "first vertex to the rest of the vertices");
             applyDijkstra(graph, source);
+            PrintColor.printYel("\nThe stores are located at the top of 5, 7, 12");
+            PrintColor.printNorm2("Select the origin vertex : ");
+            int ver = input.nextInt();
+            List<Vertex> dis = new ArrayList<>();
+            dis.add(graph.getVertices().get(5));
+            dis.add(graph.getVertices().get(7));
+            dis.add(graph.getVertices().get(12));
+            applyDijkstra2(graph,graph.getVertices().get(ver),dis);
         }
         else if (n == 2){
-
             // problem
-            Graph graph = JsonFileReader.ReaderJsonGraph();
-            Vertex source = graph.getVertices().get(0); // رأس مبدأ
 
-            PrintColor.printNorm("The graph was reader :");
-            PrintColor.printNorm("Vertices: " + graph.getVertices().size());
-            PrintColor.printNorm("Edges: " + graph.getEdges().size());
 
-            PrintColor.printPur("Applying Dijkstra's algorithm:\n");
-            applyDijkstra(graph, source);
         }
         else
             PrintColor.printYel("The input Should be between 1 - 2 ");
