@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.File.JSonFileWriter;
 import com.company.File.JsonFileReader;
+import com.company.colorGraph.WriteColorGraph;
 import com.company.models.Carpet;
 import com.company.models.GFGGraph;
 import com.company.models.Node;
@@ -23,22 +24,31 @@ import static java.lang.System.exit;
 public class Main {
     public static Scanner input = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
+
+        WriteColorGraph w = new WriteColorGraph();
+        w.write();
+        w.write();
+
+        w.write();
+        w.write();        w.write();
+        w.write();
         //Dijkstra
         {/*
-        int numVertices = 10; // تعداد رئوس مورد نیاز
+            int numVertices = 10; // تعداد رئوس مورد نیاز
 
-        Graph graph = generateRandomGraph(numVertices);
-        Vertex source = graph.getVertices().get(3); // رأس مبدأ
+            Graph graph = generateRandomGraph(numVertices);
+            Vertex source = graph.getVertices().get(0); // رأس مبدأ
 
-        PrintColor.printNorm("Randomly generated graph:");
-        PrintColor.printNorm("Vertices: " + graph.getVertices().size());
-        PrintColor.printNorm("Edges: " + graph.getEdges().size());
+            PrintColor.printNorm("Randomly generated graph:");
+            PrintColor.printNorm("Vertices: " + graph.getVertices().size());
+            PrintColor.printNorm("Edges: " + graph.getEdges().size());
 
-        PrintColor.printPur("\nApplying Dijkstra's algorithm:");
-        applyDijkstra(graph, source);}*/
-        }
+            PrintColor.printPur("\nApplying Dijkstra's algorithm:");
+            applyDijkstra(graph, source);
+        */}
+
         //coloring graph test
         {/*
             GFGGraph g1 = new GFGGraph(5);
@@ -130,8 +140,8 @@ public class Main {
             System.out.println(answer[0] + "  " + answer[1] + "  " + answer[2]);
         */
         }
-    }
 
+    }
     //MainMenu();
     public static void MainMenu () {
         while (true) {
