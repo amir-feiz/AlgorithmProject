@@ -52,6 +52,4 @@ public class SequenceCheck {
         int[] answer = {imax3,imax2,imax1};
         return answer;
     }
-
-
 }
