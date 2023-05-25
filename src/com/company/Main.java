@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Dijkstra.Dijkstra;
+import com.company.Dijkstra.Edge;
 import com.company.Dijkstra.Graph;
 import com.company.Dijkstra.Vertex;
 
@@ -186,19 +187,20 @@ public class Main {
     static void CaseOne(int n ){
         if (n == 1){
             Graph graph = Dijkstra.generateRandomGraph(15);
-            Vertex source = graph.getVertices().get(0); // رأس مبدأ
 
             PrintColor.printNorm("Randomly generated graph:");
             PrintColor.printNorm("Vertices: " + graph.getVertices().size());
             PrintColor.printNorm("Edges: " + graph.getEdges().size());
-            PrintColor.printPur("Applying Dijkstra's algorithm:\n");
 
-            PrintColor.printPur("We will show you the best routes from the " +
-                                        "first vertex to the rest of the vertices");
-            applyDijkstra(graph, source);
             PrintColor.printYel("\nThe stores are located at the top of 5, 7, 12");
             PrintColor.printNorm2("Select the origin vertex : ");
             int ver = input.nextInt();
+
+            PrintColor.printPur("We will show you the best routes from the " +
+                    "this vertex to the rest of the vertices");
+            applyDijkstra(graph, graph.getVertices().get(ver));
+
+            PrintColor.printPur("The best routes to the stores are:");
             List<Vertex> dis = new ArrayList<>();
             dis.add(graph.getVertices().get(5));
             dis.add(graph.getVertices().get(7));
@@ -206,8 +208,43 @@ public class Main {
             applyDijkstra2(graph,graph.getVertices().get(ver),dis);
         }
         else if (n == 2){
-            // problem
+            //add a new graph
+            Graph graph = new Graph();
+            for (int i = 0; i < 5; i++) {
+                Vertex vertex = new Vertex(i);
+                graph.addVertex(vertex);
+            }
 
+            Edge edge = new Edge(graph.getVertices().get(0), graph.getVertices().get(2), 22);
+            Edge edge1 = new Edge(graph.getVertices().get(2), graph.getVertices().get(0), 22);
+            Edge edge2 = new Edge(graph.getVertices().get(1), graph.getVertices().get(4), 13);
+            Edge edge3 = new Edge(graph.getVertices().get(4), graph.getVertices().get(1), 13);
+            Edge edge4 = new Edge(graph.getVertices().get(1), graph.getVertices().get(3), 15);
+            Edge edge5 = new Edge(graph.getVertices().get(3), graph.getVertices().get(1), 15);
+            Edge edge6 = new Edge(graph.getVertices().get(2), graph.getVertices().get(3), 60);
+            Edge edge7 = new Edge(graph.getVertices().get(3), graph.getVertices().get(2), 60);
+            Edge edge8 = new Edge(graph.getVertices().get(0), graph.getVertices().get(4), 8);
+            Edge edge9 = new Edge(graph.getVertices().get(4), graph.getVertices().get(0), 8);
+
+            graph.addEdge(edge);
+            graph.addEdge(edge1);
+            graph.addEdge(edge2);
+            graph.addEdge(edge3);
+            graph.addEdge(edge4);
+            graph.addEdge(edge5);
+            graph.addEdge(edge6);
+            graph.addEdge(edge7);
+            graph.addEdge(edge8);
+            graph.addEdge(edge9);
+
+            PrintColor.printYel("The store is located at 2");
+
+            PrintColor.printNorm2("Select the origin vertex : ");
+            int ver = input.nextInt();
+            applyDijkstra(graph,graph.getVertices().get(ver));
+            List<Vertex> dis = new ArrayList<>();
+            dis.add(graph.getVertices().get(2));
+            applyDijkstra2(graph,graph.getVertices().get(ver),dis);
 
         }
         else
