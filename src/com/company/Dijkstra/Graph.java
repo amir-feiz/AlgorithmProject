@@ -3,8 +3,8 @@ package com.company.Dijkstra;
 import java.util.*;
 
 public class Graph {
-    private List<Vertex> vertices;
-    private List<Edge> edges;
+    private final List<Vertex> vertices;
+    private final List<Edge> edges;
 
     public Graph() {
         vertices = new ArrayList<>();

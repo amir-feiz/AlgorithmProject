@@ -1,23 +1,17 @@
 package com.company;
 
+import com.company.Dijkstra.Dijkstra;
+import com.company.Dijkstra.Graph;
+import com.company.Dijkstra.Vertex;
 import com.company.File.JSonFileWriter;
 import com.company.File.JsonFileReader;
-import com.company.models.Carpet;
-import com.company.models.GFGGraph;
-import com.company.models.Node;
-import com.company.models.SequenceCheck;
 
-import java.util.Random;
-
-import com.company.models.*;
 import com.company.View.*;
-import com.company.Dijkstra.*;
 
-import javax.swing.text.View;
+import java.util.Objects;
 import java.util.Scanner;
 
-import static com.company.Dijkstra.DijkstraGraphGenerator.applyDijkstra;
-import static com.company.Dijkstra.DijkstraGraphGenerator.generateRandomGraph;
+import static com.company.Dijkstra.Dijkstra.applyDijkstra;
 import static java.lang.System.exit;
 
 public class Main {
@@ -25,6 +19,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Main.MainMenu();
+//        ArrayList<String[]> arr = RandomIntReader.FileReader();
+//        System.out.println("scsdc");
         //Dijkstra
         {/*
         int numVertices = 10; // تعداد رئوس مورد نیاز
@@ -136,10 +133,25 @@ public class Main {
     public static void MainMenu () {
         while (true) {
             // Here
+            PrintColor.printCya("\n1.Find the best way to store.");
+//            PrintColor.printCya("");
+//            PrintColor.printCya("");
+//            PrintColor.printCya("");
+            PrintColor.printCya("'exit' for exit");
             String select = input.next();
             switch (select) {
                 case "1":
-
+                    //Dijkstra
+                    while (true) {
+                        PrintColor.printCya("\n1.Create a random graph");
+                        PrintColor.printCya("2.Read a graph from file ");
+                        PrintColor.printCya("'back' for back");
+                        select = input.next();
+                        if (Objects.equals(select, "back"))
+                            break;
+                        else
+                            CaseOne(Integer.parseInt(select));
+                    }
                     break;
                 case "2":
 
@@ -164,5 +176,32 @@ public class Main {
                     exit(0);
             }
         }
+    }
+    static void CaseOne(int n ){
+        if (n == 1){
+            Graph graph = Dijkstra.generateRandomGraph(10);
+            Vertex source = graph.getVertices().get(0); // رأس مبدأ
+
+            PrintColor.printNorm("Randomly generated graph:");
+            PrintColor.printNorm("Vertices: " + graph.getVertices().size());
+            PrintColor.printNorm("Edges: " + graph.getEdges().size());
+            PrintColor.printPur("Applying Dijkstra's algorithm:\n");
+            applyDijkstra(graph, source);
+        }
+        else if (n == 2){
+
+            // problem
+            Graph graph = JsonFileReader.ReaderJsonGraph();
+            Vertex source = graph.getVertices().get(0); // رأس مبدأ
+
+            PrintColor.printNorm("The graph was reader :");
+            PrintColor.printNorm("Vertices: " + graph.getVertices().size());
+            PrintColor.printNorm("Edges: " + graph.getEdges().size());
+
+            PrintColor.printPur("Applying Dijkstra's algorithm:\n");
+            applyDijkstra(graph, source);
+        }
+        else
+            PrintColor.printYel("The input Should be between 1 - 2 ");
     }
 }
