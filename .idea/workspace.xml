@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/TxtFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/TxtFileWriter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dijkstra/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dijkstra/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/colorGraph/ReadColorGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/colorGraph/WriteColorGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/TxtFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/TxtFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/colorGraphFile/ReadColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/ReadColorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/colorGraphFile/WriteColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/WriteColorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/ReadKnapsack1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/ReadKnapsack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/WriteKnapsack1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/WriteKnapsack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/models/GFGGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/GFGGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Amir&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Desktop/algorithm project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.View" />
@@ -68,8 +97,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684309081748</updated>
+      <workItem from="1685074428768" duration="44000" />
+      <workItem from="1685074482947" duration="51000" />
+      <workItem from="1685074541685" duration="52000" />
+      <workItem from="1685074708126" duration="5286000" />
+      <workItem from="1685083103325" duration="2363000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -81,5 +118,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack1.java</url>
+          <line>12</line>
+          <properties class="com.company.File.knapSackFile.ReadKnapsack1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack1.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/File/sequence/SequenceReader.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

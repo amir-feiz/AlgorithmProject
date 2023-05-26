@@ -1,4 +1,4 @@
-package com.company.File;
+package com.company.File.sequence;
 
 import com.company.View.PrintColor;
 
@@ -6,22 +6,23 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class TxtFileWriter {
+public class SequenceWriter {
     public static void RandomWriter() {
-        int count = 120000;
+        int count = 1200;
         int min = 1;
         int max = 10;
 
         try {
-            FileWriter writer = new FileWriter(".\\numbers.txt" , true);
+            FileWriter writer = new FileWriter(".\\numbers.txt" );
 
             Random random = new Random();
-            for (int i = 0; i < count; i++) {
-                int randomNumber = random.nextInt(max - min + 1) + min;
-                writer.write(randomNumber + " ");
+            for (int j =0; j<10;j++) {
+                for (int i = 0; i < count; i++) {
+                    int randomNumber = random.nextInt(max - min + 1) + min;
+                    writer.write(randomNumber + " ");
+                }
+                writer.write("\n");
             }
-            writer.write( "\n");
-
             writer.close();
 //            System.out.println("Done!");
         } catch (IOException e) {

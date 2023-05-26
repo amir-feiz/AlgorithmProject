@@ -1,4 +1,4 @@
-package com.company.colorGraphFile;
+package com.company.File.colorGraphFile;
 
 import java.io.FileWriter;
 import java.io.IOException;
