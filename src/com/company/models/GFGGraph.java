@@ -1,5 +1,7 @@
 package com.company.models;
 
+import com.company.View.PrintColor;
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -70,8 +72,14 @@ public class GFGGraph {
     }
 
     public void show(){
-        for (int i=0;i<this.allNodes.length;i++)
-            System.out.println("Adjacency of node " + i + " is: " + allNodes[i].getAdj());
+        for (int i=0;i<this.allNodes.length;i++){
+            PrintColor.printBlu2("Adjacency of node ");
+            PrintColor.printYel2(i);
+            PrintColor.printBlu2(" is: ");
+            PrintColor.printNorm2(allNodes[i].getAdj());
+            PrintColor.printNorm("");
+//            + i + " is: " + allNodes[i].getAdj());
+        }
     }
 
 

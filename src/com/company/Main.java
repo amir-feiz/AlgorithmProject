@@ -154,11 +154,11 @@ public class Main {
         while (true) {
             // Here
             PrintColor.printCya("\n1.Find the best way to store.");
-            PrintColor.printCya("\n2.Design new carpets.");
-            PrintColor.printCya("\n3.How many carpets you can buy with your money?");
-            PrintColor.printCya("\n4.How many carpets you can buy with your maximum weigh?");
-            PrintColor.printCya("\n5.Find similar carpets.");
-            PrintColor.printCya("\n'exit' for exit");
+            PrintColor.printCya("2.Design new carpets.");
+            PrintColor.printCya("3.How many carpets you can buy with your money?");
+            PrintColor.printCya("4.How many carpets you can buy with your maximum weigh?");
+            PrintColor.printCya("5.Find similar carpets.");
+            PrintColor.printCya("'exit' for exit");
             String select = input.next();
             switch (select) {
                 case "1":
@@ -216,7 +216,8 @@ public class Main {
             dis.add(graph.getVertices().get(12));
             applyDijkstra2(graph, graph.getVertices().get(ver), dis);
             mainMenu();
-        } else if (n == 2) {
+        }
+        else if (n == 2) {
             //add a new graph
             Graph graph = new Graph();
             for (int i = 0; i < 5; i++) {
@@ -256,37 +257,33 @@ public class Main {
             applyDijkstra2(graph, graph.getVertices().get(ver), dis);
             mainMenu();
 
-        } else {
+        }
+        else {
             PrintColor.printYel("The input Should be between 1 - 2 ");
             mainMenu();
         }
     }
     static void caseTwo() {
-
-        Scanner scanner = new Scanner(System.in);
-
-        PrintColor.printGre("Choose the carpet ");
         for (int i=0;i< gfgGraphs.size();i++){
             PrintColor.printGre("Number: " + i);
             gfgGraphs.get(i).show();
         }
-        gfgGraphs.get(scanner.nextInt()).greedyColoring();
+        PrintColor.printPur("Choose the carpet ");
+        gfgGraphs.get(input.nextInt()).greedyColoring();
         mainMenu();
     }
     static void caseThree(){
-        Scanner scanner = new Scanner(System.in);
-
         PrintColor.printBlu("Prices are like: ");
         showPriceAndWeigh();
 
-        PrintColor.printGre("Enter your maximum price");
-        PrintColor.printYel("You can buy  " + Knapsack.knapsackForCount(knapsack[0], scanner.nextInt()));
+        PrintColor.printNorm("Enter your maximum price");
+        PrintColor.printYel("You can buy  " + Knapsack.knapsackForCount(knapsack[0], input.nextInt()));
         mainMenu();
     }
     static void caseFour(){
         PrintColor.printBlu("Prices and weighs are like: ");
         showPriceAndWeigh();
-        PrintColor.printGre("Enter your maximum weigh");
+        PrintColor.printNorm("Enter your maximum weigh");
         PrintColor.printYel("Max value for this weigh is: " + Knapsack.knapSack(input.nextInt(),knapsack[1],knapsack[0] ));
     }
     static void caseFive(){
@@ -297,8 +294,11 @@ public class Main {
     }
     public static void showPriceAndWeigh(){
         for(int i=0;i< knapsack[0].length;i++){
-            System.out.println("Carpet" + i +":");
-            System.out.println("value: " + knapsack[0][i] + "\tWeigh: " + knapsack[1][i]);
+            PrintColor.printGre2("Carpet " + i +" : ");
+            PrintColor.printRed2("\tvalue: " );
+            PrintColor.printNorm2(knapsack[0][i] );
+            PrintColor.printBlu2("\tWeigh: " );
+            PrintColor.printNorm2(knapsack[1][i] + "\n");
         }
 
     }

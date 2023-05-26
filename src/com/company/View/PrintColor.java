@@ -56,4 +56,27 @@ public class PrintColor {
                 + obj
                 + ANSI_RESET);
     }
+    public static void printYel2(Object obj){
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_YEl = "\u001B[33m";
+        System.out.print(ANSI_YEl
+                + obj
+                + ANSI_RESET);
+    }
+    public static void printRed2(Object obj){
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_RED = "\u001B[31m";
+        System.out.print(ANSI_RED
+                + obj
+                + ANSI_RESET);
+    }
+    public static void printGre2(Object obj){
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_GRE = "\u001B[32m";
+        System.out.print(ANSI_GRE
+                + obj
+                + ANSI_RESET);
+    }
+
+
 }

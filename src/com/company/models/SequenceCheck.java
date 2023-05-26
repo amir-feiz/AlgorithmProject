@@ -1,6 +1,7 @@
 package com.company.models;
 
-import com.sun.jdi.request.StepRequest;
+import com.company.View.PrintColor;
+
 
 public class SequenceCheck {
 
@@ -52,9 +53,23 @@ public class SequenceCheck {
             }
         }
         int[] answer = {imax3, imax2, imax1};
-        System.out.println("First most similar is carpet: " + imax1 + " with similarity of: " + results[imax1] + " Nodes");
-        System.out.println("second most similar is carpet: " + imax2+ " with similarity of: " + results[imax2] + " Nodes");
-        System.out.println("Third most similar is carpet: " + imax3+ " with similarity of: " + results[imax3] + " Nodes");
+        PrintColor.printNorm2("First most similar is carpet:\t");
+        PrintColor.printBlu2(imax1);
+        PrintColor.printNorm2(" with similarity of: ");
+        PrintColor.printRed2(results[imax1]);
+        PrintColor.printNorm(" Nodes");
+
+        PrintColor.printNorm2("Second most similar is carpet:\t");
+        PrintColor.printBlu2(imax2);
+        PrintColor.printNorm2(" with similarity of: ");
+        PrintColor.printRed2(results[imax2]);
+        PrintColor.printNorm(" Nodes");
+
+        PrintColor.printNorm2("Third most similar is carpet:\t");
+        PrintColor.printBlu2(imax3);
+        PrintColor.printNorm2(" with similarity of: ");
+        PrintColor.printRed2(results[imax3]);
+        PrintColor.printNorm(" Nodes");
 
         return answer;
     }
@@ -62,13 +77,13 @@ public class SequenceCheck {
     public static void show(Node[][] allNodes) {
         int counter;
         for (int i = 0; i < allNodes.length; i++) {
-            System.out.println("Carpet " + i);
+            PrintColor.printBlu("Carpet " + i);
             counter = 0;
             for (int j = 0; j < 30; j++) {
                 for (int z = 0; z < 40; z++) {
-                    System.out.print(allNodes[i][counter++].getValue() + " ");
+                    PrintColor.printNorm2(allNodes[i][counter++].getValue() + " ");
                 }
-                System.out.println();
+                PrintColor.printNorm("");
             }
         }
     }
