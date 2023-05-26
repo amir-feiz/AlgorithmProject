@@ -4,33 +4,43 @@ import com.company.Dijkstra.Dijkstra;
 import com.company.Dijkstra.Edge;
 import com.company.Dijkstra.Graph;
 import com.company.Dijkstra.Vertex;
+import com.company.File.colorGraphFile.ReadColorGraph;
+import com.company.File.colorGraphFile.WriteColorGraph;
+import com.company.File.knapSackFile.ReadKnapsack1;
+import com.company.File.sequence.SequenceReader;
+import com.company.File.sequence.SequenceWriter;
+import com.company.models.GFGGraph;
 
 import com.company.View.*;
+import com.company.models.Knapsack;
+import com.company.models.Node;
+import com.company.models.SequenceCheck;
 
+import java.io.IOException;
+import java.util.*;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
 
 import static com.company.Dijkstra.Dijkstra.*;
 import static java.lang.System.exit;
 
 public class Main {
     public static Scanner input = new Scanner(System.in);
+    WriteColorGraph w = new WriteColorGraph();
+    static ArrayList<GFGGraph> gfgGraphs;
+    static int[][] knapsack ;
+    static Node[][] allNodes ;
+    public static void main(String[] args) throws InterruptedException, IOException {
+        ReadColorGraph r = new ReadColorGraph();
 
-    public static void main(String[] args) throws InterruptedException {
+        gfgGraphs = r.readFile();
+        knapsack = ReadKnapsack1.inputFromFile();
+        allNodes = SequenceReader.FileReader();
+
+        SequenceWriter.RandomWriter();
 
 
-        Main.MainMenu();
-//        ArrayList<String[]> arr = RandomIntReader.FileReader();
-//        System.out.println("scsdc");
-        /*WriteColorGraph w = new WriteColorGraph();
-        w.write();
-        w.write();
+        Main.mainMenu();
 
-        w.write();
-        w.write();        w.write();
-        w.write();*/
         //Dijkstra
         {/*
             int numVertices = 10; // تعداد رئوس مورد نیاز
@@ -44,8 +54,8 @@ public class Main {
 
             PrintColor.printPur("\nApplying Dijkstra's algorithm:");
             applyDijkstra(graph, source);
-        */}
-
+        */
+        }
         //coloring graph test
         {/*
             GFGGraph g1 = new GFGGraph(5);
@@ -80,7 +90,8 @@ public class Main {
             int W = 50;
             int n = val.length;
             System.out.println("max value is: " + knapSack(W, wt, val, n));
-            */}
+            */
+        }
         //knapsack test for  most count
         {/*
             Carpet c1 = new Carpet(60,10);
@@ -91,7 +102,8 @@ public class Main {
             int val[] = new int[] { c1.getPrice(), c2.getPrice(), c3.getPrice() ,c4.getPrice(),c5.getPrice() };
             int max = 200;
             System.out.println("max value is: " + knapsackForCount(val,max));
-        */}
+        */
+        }
         //sort algorithm test
         {/*
             Node n1 = new Node(1);
@@ -133,17 +145,19 @@ public class Main {
             }
             int answer[] = SequenceCheck.chooseMostSimilars(mainNode, n);
             System.out.println(answer[0] + "  " + answer[1] + "  " + answer[2]);
-        */}
+        */
+        }
     }
 
     //MainMenu();
-    public static void MainMenu () {
+    public static void mainMenu() {
         while (true) {
             // Here
             PrintColor.printCya("\n1.Find the best way to store.");
-//            PrintColor.printCya("");
-//            PrintColor.printCya("");
-//            PrintColor.printCya("");
+            PrintColor.printCya("\n2.Design new carpets.");
+            PrintColor.printCya("\n3.How many carpets you can buy with your money?");
+            PrintColor.printCya("\n4.How many carpets you can buy with your maximum weigh?");
+            PrintColor.printCya("\n5.Find similar carpets.");
             PrintColor.printCya("'exit' for exit");
             String select = input.next();
             switch (select) {
@@ -157,25 +171,20 @@ public class Main {
                         if (Objects.equals(select, "back"))
                             break;
                         else
-                            CaseOne(Integer.parseInt(select));
+                            caseOne(Integer.parseInt(select));
                     }
                     break;
                 case "2":
+                    caseTwo();
+                    break;
 
+                case "3":
+                    caseThree();
                     break;
                 case "4":
 
                     break;
-                case "3":
-
-                    break;
                 case "5":
-
-                    break;
-                case "6":
-
-                    break;
-                case "7":
 
                     break;
                 case "exit":
@@ -184,8 +193,9 @@ public class Main {
             }
         }
     }
-    static void CaseOne(int n ){
-        if (n == 1){
+
+    static void caseOne(int n) {
+        if (n == 1) {
             Graph graph = Dijkstra.generateRandomGraph(15);
 
             PrintColor.printNorm("Randomly generated graph:");
@@ -205,9 +215,9 @@ public class Main {
             dis.add(graph.getVertices().get(5));
             dis.add(graph.getVertices().get(7));
             dis.add(graph.getVertices().get(12));
-            applyDijkstra2(graph,graph.getVertices().get(ver),dis);
-        }
-        else if (n == 2){
+            applyDijkstra2(graph, graph.getVertices().get(ver), dis);
+            mainMenu();
+        } else if (n == 2) {
             //add a new graph
             Graph graph = new Graph();
             for (int i = 0; i < 5; i++) {
@@ -241,13 +251,47 @@ public class Main {
 
             PrintColor.printNorm2("Select the origin vertex : ");
             int ver = input.nextInt();
-            applyDijkstra(graph,graph.getVertices().get(ver));
+            applyDijkstra(graph, graph.getVertices().get(ver));
             List<Vertex> dis = new ArrayList<>();
             dis.add(graph.getVertices().get(2));
-            applyDijkstra2(graph,graph.getVertices().get(ver),dis);
+            applyDijkstra2(graph, graph.getVertices().get(ver), dis);
+            mainMenu();
 
-        }
-        else
+        } else {
             PrintColor.printYel("The input Should be between 1 - 2 ");
+            mainMenu();
+        }
     }
+    static void caseTwo() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        PrintColor.printGre("Choose the carpet ");
+        for (int i=0;i< gfgGraphs.size();i++){
+            PrintColor.printGre("Number: " + i);
+            gfgGraphs.get(i).show();
+        }
+        gfgGraphs.get(scanner.nextInt()).greedyColoring();
+        mainMenu();
+    }
+    static void caseThree(){
+        Scanner scanner = new Scanner(System.in);
+
+        PrintColor.printBlu("Prices are like: ");
+        showPriceAndWeigh();
+
+        PrintColor.printGre("Enter your maximum price");
+        PrintColor.printYel("You can buy  " + Knapsack.knapsackForCount(knapsack[0], scanner.nextInt()));
+        mainMenu();
+    }
+
+    public static void showPriceAndWeigh(){
+        for(int i=0;i< knapsack[0].length;i++){
+            System.out.println("Carpet" + i +":");
+            System.out.println("value: " + knapsack[0][i] + "\tWeigh: " + knapsack[1][i]);
+        }
+
+    }
+
+
 }

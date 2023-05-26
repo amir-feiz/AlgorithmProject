@@ -11,7 +11,8 @@ public class Knapsack {
 
     // Returns the maximum value that can be put in a knapsack
     // of capacity W
-    public static int knapSack(int W, int[] wt, int[] val, int n) {
+    public static int knapSack(int W, int[] wt, int[] val) {
+        int n = val.length;
         int i, w;
         int[][] K = new int[n + 1][W + 1];
         // Build table K[][] in bottom up manner

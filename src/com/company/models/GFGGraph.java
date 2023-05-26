@@ -68,4 +68,11 @@ public class GFGGraph {
             System.out.println("Vertex " + u + " --->  Color "
                     + result[u]);
     }
+
+    public void show(){
+        for (int i=0;i<this.allNodes.length;i++)
+            System.out.println("Adjacency of node " + i + " is: " + allNodes[i].getAdj());
+    }
+
+
 }
