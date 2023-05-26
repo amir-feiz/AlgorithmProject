@@ -33,12 +33,16 @@ public class Knapsack {
         int count = 0;
         int addedAPrices=0;
         Arrays.sort(prices);
+        System.out.println("You can buy these carpets.");
         for(int x:prices){
             addedAPrices+=x;
-            if (addedAPrices > max)
+            if (addedAPrices > max) {
                 return count;
-            else
+            }
+            else {
+                System.out.println("Carpet " + count + " with price " + x);
                 count++;
+            }
         }
         return count;
     }

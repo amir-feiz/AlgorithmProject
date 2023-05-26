@@ -158,7 +158,7 @@ public class Main {
             PrintColor.printCya("\n3.How many carpets you can buy with your money?");
             PrintColor.printCya("\n4.How many carpets you can buy with your maximum weigh?");
             PrintColor.printCya("\n5.Find similar carpets.");
-            PrintColor.printCya("'exit' for exit");
+            PrintColor.printCya("\n'exit' for exit");
             String select = input.next();
             switch (select) {
                 case "1":
@@ -177,15 +177,14 @@ public class Main {
                 case "2":
                     caseTwo();
                     break;
-
                 case "3":
                     caseThree();
                     break;
                 case "4":
-
+                    caseFour();
                     break;
                 case "5":
-
+                    caseFive();
                     break;
                 case "exit":
                     PrintColor.printRed("Good luck");
@@ -284,7 +283,18 @@ public class Main {
         PrintColor.printYel("You can buy  " + Knapsack.knapsackForCount(knapsack[0], scanner.nextInt()));
         mainMenu();
     }
-
+    static void caseFour(){
+        PrintColor.printBlu("Prices and weighs are like: ");
+        showPriceAndWeigh();
+        PrintColor.printGre("Enter your maximum weigh");
+        PrintColor.printYel("Max value for this weigh is: " + Knapsack.knapSack(input.nextInt(),knapsack[1],knapsack[0] ));
+    }
+    static void caseFive(){
+        SequenceCheck.show(allNodes);
+        PrintColor.printGre("Enter which carpet you want to compare with others.");
+        int inputCarpet = input.nextInt();
+        SequenceCheck.chooseMostSimilars(allNodes[inputCarpet],allNodes,inputCarpet);
+    }
     public static void showPriceAndWeigh(){
         for(int i=0;i< knapsack[0].length;i++){
             System.out.println("Carpet" + i +":");
