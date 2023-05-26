@@ -3,17 +3,15 @@ package com.company;
 import com.company.Dijkstra.Dijkstra;
 import com.company.Dijkstra.Graph;
 import com.company.Dijkstra.Vertex;
-import com.company.File.JSonFileWriter;
 import com.company.File.JsonFileReader;
-import com.company.colorGraph.WriteColorGraph;
-import com.company.models.Carpet;
+import com.company.colorGraphFile.ReadColorGraph;
+import com.company.colorGraphFile.WriteColorGraph;
 import com.company.models.GFGGraph;
-import com.company.models.Node;
-import com.company.models.SequenceCheck;
 
 import com.company.View.*;
-import com.company.Dijkstra.*;
 
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -23,19 +21,27 @@ import static java.lang.System.exit;
 public class Main {
     public static Scanner input = new Scanner(System.in);
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, FileNotFoundException {
+        WriteColorGraph w = new WriteColorGraph();
+        ReadColorGraph r = new ReadColorGraph();
 
+//        w.write();
+//        w.write();
+//        w.write();
+//        w.write();
+//        w.write();
+//        w.write();
+
+        ArrayList<GFGGraph> gfgGraphs = r.readFile();
+        gfgGraphs.get(0).greedyColoring();
+        gfgGraphs.get(1).greedyColoring();
+        gfgGraphs.get(2).greedyColoring();
+        gfgGraphs.get(3).greedyColoring();
 
         Main.MainMenu();
 //        ArrayList<String[]> arr = RandomIntReader.FileReader();
 //        System.out.println("scsdc");
-        WriteColorGraph w = new WriteColorGraph();
-        w.write();
-        w.write();
 
-        w.write();
-        w.write();        w.write();
-        w.write();
         //Dijkstra
         {/*
             int numVertices = 10; // تعداد رئوس مورد نیاز
@@ -50,7 +56,6 @@ public class Main {
             PrintColor.printPur("\nApplying Dijkstra's algorithm:");
             applyDijkstra(graph, source);
         */}
-
         //coloring graph test
         {/*
             GFGGraph g1 = new GFGGraph(5);
@@ -73,8 +78,7 @@ public class Main {
             g2.addEdge(4, 3);
             System.out.println("Coloring of graph 2 ");
             g2.greedyColoring();
-        */
-        }
+        */}
         //knapsack for most value
         {/*
             Carpet c1 = new Carpet(60,10);
@@ -85,8 +89,7 @@ public class Main {
             int W = 50;
             int n = val.length;
             System.out.println("max value is: " + knapSack(W, wt, val, n));
-            */
-        }
+            */}
         //knapsack test for  most count
         {/*
             Carpet c1 = new Carpet(60,10);
@@ -97,8 +100,7 @@ public class Main {
             int val[] = new int[] { c1.getPrice(), c2.getPrice(), c3.getPrice() ,c4.getPrice(),c5.getPrice() };
             int max = 200;
             System.out.println("max value is: " + knapsackForCount(val,max));
-        */
-        }
+        */}
         //sort algorithm test
         {/*
             Node n1 = new Node(1);
@@ -140,8 +142,7 @@ public class Main {
             }
             int answer[] = SequenceCheck.chooseMostSimilars(mainNode, n);
             System.out.println(answer[0] + "  " + answer[1] + "  " + answer[2]);
-        */
-        }
+        */}
     }
 
     //MainMenu();
