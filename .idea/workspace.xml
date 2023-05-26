@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/models/SequenceCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/SequenceCheck.java" afterDir="false" />
-    </list>
+    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +79,7 @@
       <workItem from="1685074482947" duration="51000" />
       <workItem from="1685074541685" duration="52000" />
       <workItem from="1685074708126" duration="5286000" />
-      <workItem from="1685083103325" duration="10114000" />
+      <workItem from="1685083103325" duration="11068000" />
     </task>
     <task id="LOCAL-00001" summary="finished all files&#10;coloring graph part is done in menu">
       <created>1685085776666</created>
@@ -103,7 +95,35 @@
       <option name="project" value="LOCAL" />
       <updated>1685089095962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="menu completed">
+      <created>1685098539965</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685098539965</updated>
+    </task>
+    <task id="LOCAL-00004" summary="menu completed">
+      <created>1685098555141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685098555142</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit all files">
+      <created>1685101942709</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685101942709</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit all files">
+      <created>1685102183153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685102183153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +142,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished all files&#10;coloring graph part is done in menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished all files&#10;coloring graph part is done in menu" />
+    <MESSAGE value="menu completed" />
+    <MESSAGE value="commit all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit all files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
