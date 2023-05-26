@@ -77,6 +77,4 @@ public class PrintColor {
                 + obj
                 + ANSI_RESET);
     }
-
-
 }
