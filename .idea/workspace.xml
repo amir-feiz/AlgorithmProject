@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack1.java" afterDir="false" />
+    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="finished all files&#10;coloring graph part is done in menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/TxtFileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/TxtFileWriter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/colorGraph/ReadColorGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/colorGraph/WriteColorGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/File/TxtFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/File/TxtFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/GFGGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/GFGGraph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/colorGraphFile/ReadColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/ReadColorGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/colorGraphFile/WriteColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/WriteColorGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/ReadKnapsack1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/ReadKnapsack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/WriteKnapsack1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/knapSackFile/WriteKnapsack2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/models/GFGGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/GFGGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +85,16 @@
       <workItem from="1685074482947" duration="51000" />
       <workItem from="1685074541685" duration="52000" />
       <workItem from="1685074708126" duration="5286000" />
-      <workItem from="1685083103325" duration="2363000" />
+      <workItem from="1685083103325" duration="4609000" />
     </task>
+    <task id="LOCAL-00001" summary="finished all files&#10;coloring graph part is done in menu">
+      <created>1685085776666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685085776666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +110,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished all files&#10;coloring graph part is done in menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished all files&#10;coloring graph part is done in menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -138,13 +134,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>39</line>
+          <line>38</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/File/sequence/SequenceReader.java</url>
           <line>12</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

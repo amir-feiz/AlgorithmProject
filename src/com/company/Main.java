@@ -12,6 +12,7 @@ import com.company.File.sequence.SequenceWriter;
 import com.company.models.GFGGraph;
 
 import com.company.View.*;
+import com.company.models.Knapsack;
 import com.company.models.Node;
 import com.company.models.SequenceCheck;
 
@@ -26,16 +27,14 @@ public class Main {
     public static Scanner input = new Scanner(System.in);
     WriteColorGraph w = new WriteColorGraph();
     static ArrayList<GFGGraph> gfgGraphs;
+    static int[][] knapsack ;
+    static Node[][] allNodes ;
     public static void main(String[] args) throws InterruptedException, IOException {
         ReadColorGraph r = new ReadColorGraph();
 
         gfgGraphs = r.readFile();
-        int[][] knapsack = ReadKnapsack1.inputFromFile();
-        Node[][] allNodes = SequenceReader.FileReader();
-
-        System.out.println(SequenceCheck.chooseMostSimilars(allNodes[0], allNodes)[2]);
-        System.out.println(SequenceCheck.chooseMostSimilars(allNodes[0], allNodes)[1]);
-        System.out.println(SequenceCheck.chooseMostSimilars(allNodes[0], allNodes)[0]);
+        knapsack = ReadKnapsack1.inputFromFile();
+        allNodes = SequenceReader.FileReader();
 
         SequenceWriter.RandomWriter();
 
@@ -180,7 +179,7 @@ public class Main {
                     break;
 
                 case "3":
-
+                    caseThree();
                     break;
                 case "4":
 
@@ -275,8 +274,24 @@ public class Main {
         gfgGraphs.get(scanner.nextInt()).greedyColoring();
         mainMenu();
     }
-
     static void caseThree(){
+        Scanner scanner = new Scanner(System.in);
+
+        PrintColor.printBlu("Prices are like: ");
+        showPriceAndWeigh();
+
+        PrintColor.printGre("Enter your maximum price");
+        PrintColor.printYel("You can buy  " + Knapsack.knapsackForCount(knapsack[0], scanner.nextInt()));
+        mainMenu();
+    }
+
+    public static void showPriceAndWeigh(){
+        for(int i=0;i< knapsack[0].length;i++){
+            System.out.println("Carpet" + i +":");
+            System.out.println("value: " + knapsack[0][i] + "\tWeigh: " + knapsack[1][i]);
+        }
 
     }
+
+
 }
