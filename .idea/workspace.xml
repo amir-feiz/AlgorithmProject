@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="finished all files&#10;coloring graph part is done in menu">
+    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/GFGGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/GFGGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/models/Knapsack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/models/SequenceCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/SequenceCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <workItem from="1685074482947" duration="51000" />
       <workItem from="1685074541685" duration="52000" />
       <workItem from="1685074708126" duration="5286000" />
-      <workItem from="1685083103325" duration="4609000" />
+      <workItem from="1685083103325" duration="10114000" />
     </task>
     <task id="LOCAL-00001" summary="finished all files&#10;coloring graph part is done in menu">
       <created>1685085776666</created>
@@ -94,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685085776666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finished all files&#10;coloring graph part is done in menu">
+      <created>1685089095962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685089095962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
