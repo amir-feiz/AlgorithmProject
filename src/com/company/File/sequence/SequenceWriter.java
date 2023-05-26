@@ -9,8 +9,8 @@ import java.util.Random;
 public class SequenceWriter {
     public static void RandomWriter() {
         int count = 1200;
-        int min = 1;
-        int max = 10;
+        int min = 0;
+        int max = 9;
 
         try {
             FileWriter writer = new FileWriter(".\\numbers.txt" );

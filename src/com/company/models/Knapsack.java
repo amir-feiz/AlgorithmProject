@@ -9,13 +9,10 @@ public class Knapsack {
         return Math.max(a, b);
     }
 
-    // Returns the maximum value that can be put in a knapsack
-    // of capacity W
     public static int knapSack(int W, int[] wt, int[] val) {
         int n = val.length;
         int i, w;
         int[][] K = new int[n + 1][W + 1];
-        // Build table K[][] in bottom up manner
         for (i = 0; i <= n; i++) {
             for (w = 0; w <= W; w++) {
                 if (i == 0 || w == 0)

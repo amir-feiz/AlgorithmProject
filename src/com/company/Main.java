@@ -36,8 +36,7 @@ public class Main {
         knapsack = ReadKnapsack1.inputFromFile();
         allNodes = SequenceReader.FileReader();
 
-        SequenceWriter.RandomWriter();
-
+        //SequenceWriter.RandomWriter();
 
         Main.mainMenu();
 

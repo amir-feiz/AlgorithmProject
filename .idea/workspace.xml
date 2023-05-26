@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="" />
+    <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/models/GFGGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/GFGGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/models/Knapsack.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,24 +32,28 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PuZli3990w9eBDgVmgshvrPmht" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Amir&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Desktop/algorithm project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Amir",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/hp/Desktop/algorithm project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.View" />
@@ -79,7 +91,7 @@
       <workItem from="1685074482947" duration="51000" />
       <workItem from="1685074541685" duration="52000" />
       <workItem from="1685074708126" duration="5286000" />
-      <workItem from="1685083103325" duration="11068000" />
+      <workItem from="1685083103325" duration="12238000" />
     </task>
     <task id="LOCAL-00001" summary="finished all files&#10;coloring graph part is done in menu">
       <created>1685085776666</created>
@@ -123,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685102183153</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit all files">
+      <created>1685102228538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685102228538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +160,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="finished all files&#10;coloring graph part is done in menu" />
     <MESSAGE value="menu completed" />
     <MESSAGE value="commit all files" />
@@ -175,7 +195,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>107</line>
+          <line>106</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
