@@ -6,6 +6,8 @@ import com.company.File.knapSackFile.*;
 import com.company.File.sequence.*;
 import com.company.models.*;
 import com.company.View.*;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 import static com.company.Dijkstra.Dijkstra.*;
@@ -13,13 +15,13 @@ import static java.lang.System.exit;
 
 public class Main {
     public static Scanner input = new Scanner(System.in);
-    WriteColorGraph w = new WriteColorGraph();
+    static WriteColorGraph writeColorGraph = new WriteColorGraph();
     static ArrayList<GFGGraph> gfgGraphs;
     static int[][] knapsack ;
     static Node[][] allNodes ;
+    static ReadColorGraph r = new ReadColorGraph();
+
     public static void main(String[] args) throws IOException {
-        ReadColorGraph r = new ReadColorGraph();
-        gfgGraphs = r.readFile();
         knapsack = ReadKnapsack1.inputFromFile();
         allNodes = SequenceReader.FileReader();
         SequenceWriter.RandomWriter();
@@ -27,7 +29,7 @@ public class Main {
     }
 
     //MainMenu();
-    public static void mainMenu() {
+    public static void mainMenu() throws IOException {
         while (true) {
             // Here
             PrintColor.printCya("\n1.Find the best way to store.");
@@ -35,6 +37,10 @@ public class Main {
             PrintColor.printCya("3.How many carpets you can buy with your money?");
             PrintColor.printCya("4.How many carpets you can buy with your maximum weigh?");
             PrintColor.printCya("5.Find similar carpets.");
+            PrintColor.printCya("6.Add new color graph for designing new carpets(coloringGraph).");
+            PrintColor.printCya("7.Add new carpet for selling(knapSack).");
+//            PrintColor.printCya("8.Add new carpet to find similars(Sequence check).");
+
             PrintColor.printCya("'exit' for exit");
             String select = input.next();
             switch (select) {
@@ -52,16 +58,27 @@ public class Main {
                     }
                     break;
                 case "2":
+                    gfgGraphs = r.readFile();
                     caseTwo();
                     break;
                 case "3":
+                    knapsack = ReadKnapsack1.inputFromFile();
+
                     caseThree();
                     break;
                 case "4":
+                    knapsack = ReadKnapsack1.inputFromFile();
+
                     caseFour();
                     break;
                 case "5":
                     caseFive();
+                    break;
+                case "6":
+                    caseSix();
+                    break;
+                case "7":
+                    caseSeven();
                     break;
                 case "exit":
                     PrintColor.printRed("Good luck");
@@ -69,7 +86,7 @@ public class Main {
             }
         }
     }
-    static void caseOne(int n) {
+    static void caseOne(int n) throws IOException {
         if (n == 1) {
             Graph graph = Dijkstra.generateRandomGraph(15);
 
@@ -139,7 +156,7 @@ public class Main {
             mainMenu();
         }
     }
-    static void caseTwo() {
+    static void caseTwo() throws IOException {
         for (int i=0;i< gfgGraphs.size();i++){
             PrintColor.printGre("Number: " + i);
             gfgGraphs.get(i).show();
@@ -148,7 +165,7 @@ public class Main {
         gfgGraphs.get(input.nextInt()).greedyColoring();
         mainMenu();
     }
-    static void caseThree(){
+    static void caseThree() throws IOException {
         PrintColor.printBlu("Prices are like: ");
         showPriceAndWeigh();
 
@@ -168,6 +185,23 @@ public class Main {
         int inputCarpet = input.nextInt();
         SequenceCheck.chooseMostSimilars(allNodes[inputCarpet],allNodes,inputCarpet);
     }
+    static void caseSix() throws IOException {
+        PrintColor.printGre("Enter count of nodes.");
+        writeColorGraph.costumeWrite(input.nextInt());
+        PrintColor.printYel("Done!");
+        mainMenu();
+
+    }
+    static void caseSeven() throws IOException {
+        PrintColor.printGre("Enter value");
+        int value = input.nextInt();
+        PrintColor.printGre("Enter weigh");
+        int weigh = input.nextInt();
+        WriteKnapsack1.writeCreatedToFile(value,weigh);
+        PrintColor.printPur("Done!");
+        mainMenu();
+    }
+
     public static void showPriceAndWeigh(){
         for(int i=0;i< knapsack[0].length;i++){
             PrintColor.printGre2("Carpet " + i +" : ");

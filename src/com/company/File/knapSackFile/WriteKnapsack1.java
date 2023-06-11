@@ -19,7 +19,7 @@ public class WriteKnapsack1 {
     }
 
     public static void writeCreatedToFile(int value, int weigh) throws IOException {
-        FileWriter file = new FileWriter("knapsack.txt");
+        FileWriter file = new FileWriter("knapsack.txt",true);
         String str = "";
         str += String.valueOf(value) + " ";
         str += String.valueOf(weigh + "\n");

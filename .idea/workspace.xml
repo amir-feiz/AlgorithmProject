@@ -6,9 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="commit all files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/colorGraph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/colorGraph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack.txt" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/colorGraphFile/WriteColorGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/colorGraphFile/WriteColorGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/ReadKnapsack2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/WriteKnapsack1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/WriteKnapsack1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/WriteKnapsack2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/WriteColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/WriteColorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/View/PrintColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/View/PrintColor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Desktop/AlgorithmProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.View" />
@@ -71,6 +94,14 @@
       <workItem from="1685074541685" duration="52000" />
       <workItem from="1685074708126" duration="5286000" />
       <workItem from="1685083103325" duration="11068000" />
+      <workItem from="1685269545636" duration="5276000" />
+      <workItem from="1685310905506" duration="784000" />
+      <workItem from="1685329947525" duration="958000" />
+      <workItem from="1685330921409" duration="1008000" />
+      <workItem from="1685342435448" duration="2068000" />
+      <workItem from="1685358912724" duration="1602000" />
+      <workItem from="1685512573598" duration="85000" />
+      <workItem from="1685512675182" duration="182000" />
     </task>
     <task id="LOCAL-00001" summary="finished all files&#10;coloring graph part is done in menu">
       <created>1685085776666</created>
