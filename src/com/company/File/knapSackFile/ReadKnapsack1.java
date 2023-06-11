@@ -9,7 +9,7 @@ public class ReadKnapsack1 {
     public static int[][] inputFromFile () throws FileNotFoundException {
         ArrayList<Integer> a1 = new ArrayList<>();
         ArrayList<Integer> a2 = new ArrayList<>();
-        File text = new File("knapsack.txt");
+        File text = new File(".\\Files\\knapsack.txt");
         Scanner sc = new Scanner(text);
 
         int lineCounter = 0;

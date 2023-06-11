@@ -9,11 +9,11 @@ import java.util.Random;
 public class SequenceWriter {
     public static void RandomWriter() {
         int count = 1200;
-        int min = 1;
-        int max = 10;
+        int min = 0;
+        int max = 9;
 
         try {
-            FileWriter writer = new FileWriter(".\\numbers.txt" );
+            FileWriter writer = new FileWriter(".\\Files\\numbers.txt" );
 
             Random random = new Random();
             for (int j =0; j<10;j++) {

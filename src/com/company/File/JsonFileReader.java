@@ -11,7 +11,7 @@ public class JsonFileReader {
         Graph graph = null;
         try {
             Gson gson = new Gson();
-            graph = gson.fromJson(new FileReader(".\\ex.json"), Graph.class);
+            graph = gson.fromJson(new FileReader(".\\Files\\ex.json"), Graph.class);
         } catch (Exception e) {
             e.printStackTrace();
         }

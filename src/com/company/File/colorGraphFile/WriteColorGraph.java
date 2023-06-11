@@ -23,7 +23,7 @@ public class WriteColorGraph {
             integerArrayListMap = new HashMap<>();
 
             str += String.valueOf(countOfNodes + " ");
-            FileWriter out = new FileWriter("colorGraph.txt", true);
+            FileWriter out = new FileWriter(".\\Files\\colorGraph.txt", true);
             for (int i=0;i<countOfNodes;i++){
                 integerArrayListMap.put(i,new ArrayList<Integer>());
             }
@@ -56,7 +56,7 @@ public class WriteColorGraph {
             integerArrayListMap = new HashMap<>();
 
             str += String.valueOf(countOfNodes + " ");
-            FileWriter out = new FileWriter("colorGraph.txt", true);
+            FileWriter out = new FileWriter(".\\Files\\colorGraph.txt", true);
             for (int i=0;i<countOfNodes;i++){
                 integerArrayListMap.put(i,new ArrayList<Integer>());
             }

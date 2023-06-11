@@ -22,9 +22,9 @@ public class Main {
     static ReadColorGraph r = new ReadColorGraph();
 
     public static void main(String[] args) throws IOException {
+        SequenceWriter.RandomWriter();
         knapsack = ReadKnapsack1.inputFromFile();
         allNodes = SequenceReader.FileReader();
-        SequenceWriter.RandomWriter();
         Main.mainMenu();
     }
 

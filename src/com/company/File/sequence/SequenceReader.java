@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class SequenceReader {
     public static Node[][] FileReader() throws FileNotFoundException {
-        File fileName = new File("numbers.txt");
+        File fileName = new File(".\\Files\\numbers.txt");
         Scanner sc = new Scanner(fileName);
         Node[][] inputNodes = new Node[10][1200];
         String[] temp;

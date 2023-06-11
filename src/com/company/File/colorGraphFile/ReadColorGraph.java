@@ -14,7 +14,7 @@ public class ReadColorGraph {
 
 
     public ArrayList<GFGGraph> readFile() throws FileNotFoundException {
-        File text = new File("colorGraph.txt");
+        File text = new File(".\\Files\\colorGraph.txt");
         Scanner sc = new Scanner(text);
         String s;
         String[] input;

@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class JSonFileWriter {
     public static void WriteJSONGraph(){
         //path
-        String path = ".\\ex.json" ;
+        String path = ".\\Files\\ex.json" ;
         JSONObject json = new JSONObject();
         try {
             Graph graph = Dijkstra.generateRandomGraph(15);

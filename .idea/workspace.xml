@@ -6,18 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="1c645dc1-bfce-4835-98cb-be7f2da4bb1e" name="Changes" comment="commit all files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorGraph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/colorGraph.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack.txt" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/colorGraph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/JSonFileWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/JSonFileWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/JsonFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/JsonFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/colorGraphFile/ReadColorGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/colorGraphFile/ReadColorGraph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/colorGraphFile/WriteColorGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/colorGraphFile/WriteColorGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/ReadKnapsack2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/ReadKnapsack1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/ReadKnapsack1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/WriteKnapsack1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/WriteKnapsack1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/knapSackFile/WriteKnapsack2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/sequence/SequenceReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/sequence/SequenceReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/sequence/SequenceWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/File/sequence/SequenceWriter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgorithmProject/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/JSonFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/JSonFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/JsonFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/JsonFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/ReadColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/ReadColorGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/WriteColorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/colorGraphFile/WriteColorGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/ReadKnapsack1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/File/knapSackFile/WriteKnapsack2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/File/sequence/SequenceWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,19 +53,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Desktop/AlgorithmProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company.View" />
